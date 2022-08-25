@@ -1,8 +1,6 @@
-import logging
 from typing import Tuple
 
 import leetcode
-from leetcode import GraphqlData
 
 from leetcode_client import get_leetcode_api_client
 

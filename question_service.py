@@ -1,12 +1,18 @@
-import logging
-
 import leetcode
 
 from leetcode_client import get_leetcode_api_client
 
+__PROBLEM_URL_PREFIX = "https://leetcode.com/problems/"
+
 
 def url_to_title_slug(url: str):
-    return url[len("https://leetcode.com/problems/"):].rstrip("/")
+    """
+    :param url:
+    :return: None if the url is invalid
+    """
+    if not url.startswith(__PROBLEM_URL_PREFIX):
+        return None
+    return url[len(__PROBLEM_URL_PREFIX):].rstrip("/")
 
 
 def title_slug_to_id(title_slug: str) -> int:
