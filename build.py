@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import logging
+import sys
 import time
 
 import leetcode.rest
@@ -20,7 +21,7 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument(
         "--list-id", type=str, required=True,
-        help="Your favorites list id, such as 'e86yjyq8' in https://leetcode.com/list?selectedList=e86yjyq8"
+        help="Your favorite list id, such as 'e86yjyq8' in https://leetcode.com/list?selectedList=e86yjyq8"
     )
 
     parser.add_argument(
@@ -28,9 +29,14 @@ def parse_args() -> argparse.Namespace:
         help="The file containing a list of question urls"
     )
 
-    args = parser.parse_args()
+    try:
+        args = parser.parse_args()
+        return args
+    except:
+        parser.print_help()
+        return None
 
-    return args
+
 
 
 def build(list_id, question_urls_file):
@@ -86,4 +92,8 @@ def build(list_id, question_urls_file):
 
 if __name__ == '__main__':
     args = parse_args()
+
+    if not args:
+        sys.exit(1)
+
     build(args.list_id, args.question_urls_file)
