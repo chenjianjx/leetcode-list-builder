@@ -30,7 +30,7 @@ Then,
 ```
 
 # Extra tools
-* Chrome add-on [copy-selected-links](https://chrome.google.com/webstore/detail/copy-selected-links/kddpiojgkjnpmgiegglncafdpnigcbij?hl=en) . With it you can easily select multiple leetcode links from a web page
+* Chrome add-on [copy-selected-links](https://chrome.google.com/webstore/detail/copy-selected-links/kddpiojgkjnpmgiegglncafdpnigcbij?hl=en) can let you select multiple leetcode links from a web page
 * [leetcode-anki](https://github.com/prius/leetcode-anki) can generate Anki decks based on a leetcode list id 
 
 
