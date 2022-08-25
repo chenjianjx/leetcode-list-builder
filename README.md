@@ -29,6 +29,10 @@ Then,
   python build.py 
 ```
 
+# Extra tools
+You can use this program with Chrome's add-on: [copy-selected-links](https://chrome.google.com/webstore/detail/copy-selected-links/kddpiojgkjnpmgiegglncafdpnigcbij?hl=en) . With it you can easily select multiple leetcode links from a web page, copy the links to a text file, and run this program. 
+
+
 # Credits
 * The project heavily relies on [python-leetcode](https://github.com/prius/python-leetcode)
 * The project copied some code and doc from [leetcode-anki](https://github.com/prius/leetcode-anki)
