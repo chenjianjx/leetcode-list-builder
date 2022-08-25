@@ -30,7 +30,8 @@ Then,
 ```
 
 # Extra tools
-You can use this program with Chrome's add-on: [copy-selected-links](https://chrome.google.com/webstore/detail/copy-selected-links/kddpiojgkjnpmgiegglncafdpnigcbij?hl=en) . With it you can easily select multiple leetcode links from a web page, copy the links to a text file, and run this program. 
+* Chrome add-on [copy-selected-links](https://chrome.google.com/webstore/detail/copy-selected-links/kddpiojgkjnpmgiegglncafdpnigcbij?hl=en) . With it you can easily select multiple leetcode links from a web page
+* [leetcode-anki](https://github.com/prius/leetcode-anki) can generate Anki decks based on a leetcode list id 
 
 
 # Credits
